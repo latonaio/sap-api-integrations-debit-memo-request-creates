@@ -4,7 +4,7 @@
 	"redis_key": "abcdefg",
 	"filepath": "/var/lib/aion/Data/rededge_sdc/abcdef.json",
 	"DebitMemoRequest": {
-		"DebitMemoRequest": "70000000",
+		"DebitMemoRequest": "",
 		"DebitMemoRequestType": "",
 		"SalesOrganization": "",
 		"DistributionChannel": "",
@@ -104,8 +104,8 @@
 			}
 		}
 	},
-	"api_schema": "sap.s4.beh.debitmemorequest.v1.DebitMemoRequest.Created.v1",
+	"api_schema": "SAPDebitMemoRequestCreates",
 	"accepter": ["Header"],
-	"debit_memo_request": "70000000",
+	"debit_memo_request": "",
 	"deleted": false
 }

@@ -1,4 +1,4 @@
-# sap-api-integrations-product-master-creates  
+# sap-api-integrations-debit-memo-requests-creates  
 sap-api-integrations-debit-memo-request-creates は、外部システム(特にエッジコンピューティング環境)をSAPと統合することを目的に、SAP API で デビットメモ依頼データを登録するマイクロサービスです。    
 sap-api-integrations-debit-memo-request-creates には、サンプルのAPI Json フォーマットが含まれています。   
 sap-api-integrations-debit-memo-request-creates は、オンプレミス版である（＝クラウド版ではない）SAPS4HANA API の利用を前提としています。クラウド版APIを利用する場合は、ご注意ください。   
@@ -23,7 +23,7 @@ sap-api-integrations-debit-memo-request-creates が対応する APIサービス 
 * APIサービス名(=baseURL): API_DEBIT_MEMO_REQUEST_SRV
 
 ## 本レポジトリ に 含まれる API名
-sap-api-integrations-sales-order-creates には、次の API をコールするためのリソースが含まれています。  
+sap-api-integrations-debit-memo-request-creates には、次の API をコールするためのリソースが含まれています。  
 
 * A_DebitMemoRequest（デビットメモ依頼 - ヘッダ）
 * A_DebitMemoRequestItem（デビットメモ依頼 - 明細）
@@ -39,9 +39,9 @@ accepter において 下記の例のように、データの種別（＝APIの�
 ここでは、"Header" が指定されています。    
   
 ```
-	"api_schema": "sap.s4.beh.debitmemorequest.v1.DebitMemoRequest.Created.v1",
+	"api_schema": "SAPDebitMemoRequestCreates",
 	"accepter": ["Header"],
-	"debit_memo_request": "70000000",
+	"debit_memo_request": "",
 	"deleted": false
 ```
   
@@ -50,9 +50,9 @@ accepter において 下記の例のように、データの種別（＝APIの�
 全データを登録する場合、sample.json は以下のように記載します。  
 
 ```
-	"api_schema": "sap.s4.beh.debitmemorequest.v1.DebitMemoRequest.Created.v1",
+	"api_schema": "SAPDebitMemoRequestCreates",
 	"accepter": ["All"],
-	"debit_memo_request": "70000000",
+	"debit_memo_request": "",
 	"deleted": false
 ```
 

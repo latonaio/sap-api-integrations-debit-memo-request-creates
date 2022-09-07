@@ -80,5 +80,4 @@ type Item struct {
 	ReferenceSDDocumentItem      string `json:"ReferenceSDDocumentItem"`
 	SDProcessStatus              string `json:"SDProcessStatus"`
 	OrderRelatedBillingStatus    string `json:"OrderRelatedBillingStatus"`
-	ToItemPricingElement         string `json:"to_PricingElement"`
 }
